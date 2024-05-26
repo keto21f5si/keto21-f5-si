@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+    <head prefix="og: http://ogp.me/ns#">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>keto21 | Home</title>
+        <meta property="og:url" content="https://keto21.f5.si/">
+        <meta property="og:title" content="KETO21">
+        <meta property="og:description" content="KETO">
+        <meta property="og:site_name" content="keto21">
+        <meta property="og:image" content="https://keto21.f5.si/icon.png">
+        <meta name="author" content="keto21">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Sans-Serif;
+                animation: b 2s;
+                scroll-behavior: smooth;
+            }
+            html,body {
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+            footer hr {
+                border: .5px solid #fff;
+                margin-block: 5px;
+            }
+            footer a {
+                color: #fff;
+            }
+            footer p:has(+ hr) {
+                margin-top: 15px;
+            }
+            .keto {
+                font-family: futura, Sans-Serif;
+                font-weight: 900;
+                color: #0000;
+                -webkit-text-stroke: #111 1.2px;
+                text-stroke: #111 1.2px;
+                animation: a 1s;
+            }
+            main h2 {
+                margin-block: 1vh;
+            }
+            main p {
+                margin-bottom: 5vh;
+            }
+            main ul {
+                margin-bottom: 5vh;
+            }
+            main a {
+                color: #111;
+            }
+            #copyURL {
+                border: none;
+                background-color: #03f;
+                color: #fff;
+                font-size: 1rem;
+                padding: 9px;
+                padding-inline: 13px;
+                margin: 5px;
+                border-radius: 100vh;
+                transition-duration: .2s;
+                font-family: futura;
+            }
+            #copyURL:active {
+                background-color: #111;
+                color: #fff;
+            }
+            main {
+                padding: 10%;
+                margin: 10%;
+                padding-block: 10px;
+                margin-block: 10px;
+                color: #111;
+                animation: a .5s;
+            }
+            footer {
+                padding: 20px;
+                padding-inline: 10%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                position: fixed,absolute;
+                background-color: #03e;
+                color: #fff;
+            }
+            @keyframes a {
+                0% {
+                    translate: 100%;
+                }
+                100% {
+                    translate: 0;
+                }
+            }
+            @keyframes b {
+                0% {
+                    filter: blur(1px);
+                }
+                100% {
+                    filter: blur(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main id="top">
+            <img src="./keto.svg" width="120px" height="120px" alt="keto" title="keto21!">
+            <h1 class="keto" style="margin-bottom: 10vh">keto21</h1>
+            <h2><span style="background-color: #5f5; padding: 3px; border-radius: 5px;">About me</span></h2>
+            <h2><br></h2>
+            <p>My name is keto. I am 14 years old. My blood type is A. My hobbies are web design and programming. I don't have a good sense of design, but I work hard every day. I'm studying Svelte (JS Library). I want to be a game developer in the future.</p>
+            
+            <h2><span style="background-color: #5ff; padding: 3px; border-radius: 5px;">Skill</span></h2>
+            <h2><br></h2>
+            <ul>
+                <li>HTML : 2</li>
+                <li>CSS : 2︎</li>
+                <li>JavaScript : 1</li>
+                <li>Scratch : 3︎</li>
+            </ul>
+            <p>HTML, CSS, and JavaScript is used here. I wanted to develop with Svelte, but there are still things I need to learn. Additionally, I plan to study Unity and Blender because I want to be a game developer in the future.</p>
+            
+            <h2><span style="background-color: #f7f; padding: 3px; border-radius: 5px;">Link</span></h2>
+            <h2><br></h2>
+            <ul>
+                <li><a href="https://github.com/KETO-21">GitHub</a></li>
+                <li><a href="https://scratch.mit.edu/users/keto21/">Scratch</a></li>
+                <li><a href="#top"><strong>Top Page</strong></a></li>
+                <li><a href="https://www.roblox.com/users/5174944355/profile?friendshipSourceType=PlayerSearch">Tawashiのリクエスト</a></li>
+                <li><a href="">Unknown</a></li>
+                <li><a href="https://line.me/ti/g2/bbl8kL7FDSJs9OUijPpjCkxEqpQaExi8RDwQpg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">Request</a></li>
+            </ul>
+            <button id="copyURL" onclick="a()">Copy the URL</button>
+        </main>
+        <footer>
+            <h1 class="keto" style="font-family: futura, Sans-Serif;font-weight: 900;color: #0000;-webkit-text-stroke: #fff 1.2px;text-stroke: #fff 1.2px;">keto21</h1>
+            <p>All Rights Reserved.</p>
+            <hr>
+            <p>Hosted by <a href="https://render.com/">Render</a>.</p>
+            <hr>
+            <p>Copyright &copy; keto21</p>
+            <hr>
+        </footer>
+        <script>function a(){navigator.clipboard.writeText(location.href)}</script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "keto21",
+  "short_name": "keto21",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

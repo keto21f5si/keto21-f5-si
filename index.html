@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="ja">
     <head prefix="og: http://ogp.me/ns#">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -24,7 +24,6 @@
                 margin: 0;
                 padding: 0;
                 font-family: Arial, Sans-Serif;
-                animation: b 2s;
                 scroll-behavior: smooth;
             }
             html,body {
@@ -38,128 +37,138 @@
             h2 {
                 font-size: 1.75rem;
             }
-            footer hr {
-                border: .5px solid #fff;
-                margin-block: 5px;
+            p {
+                font-size: 1rem;
             }
-            footer a {
-                color: #fff;
-            }
-            footer p:has(+ hr) {
-                margin-top: 15px;
-            }
-            .keto {
-                font-family: futura, Sans-Serif;
-                font-weight: 900;
-                color: #0000;
-                -webkit-text-stroke: #111 1.2px;
-                text-stroke: #111 1.2px;
-                animation: a 1s;
-            }
-            main h2 {
-                margin-block: 1vh;
-            }
-            main p {
-                margin-bottom: 5vh;
-            }
-            main ul {
-                margin-bottom: 5vh;
-            }
-            main a {
+            a {
                 color: #111;
             }
-            #copyURL {
-                border: none;
-                background-color: #03f;
-                color: #fff;
-                font-size: 1rem;
-                padding: 9px;
-                padding-inline: 13px;
-                margin: 5px;
-                border-radius: 100vh;
-                transition-duration: .2s;
-                font-family: futura;
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding: 5%;
+                background-color: #fff1;
+                -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                box-shadow: 0 0 3px #000;
+                display: flex;
+                align-items: center;
             }
-            #copyURL:active {
-                background-color: #111;
-                color: #fff;
+            .keto21 {
+                font-family: futura,Sans-Serif;
+                font-weight: 900;
+                color: #0000;
+                -webkit-text-stroke: 2px #111;
+                text-stroke: 2px #111;
+            }
+            .keto2 {
+                font-family: futura,Sans-Serif;
+                font-weight: 900;
+                color: #0000;
+                -webkit-text-stroke: 1px #fff;
+                text-stroke: 1px #fff;
+            }
+            .space {
+                margin: 30px;
             }
             main {
                 padding: 10%;
+                padding-top: 30%;
+            }
+            #hdng {
+                color: #0000;
+                -webkit-text-stroke: 1.5px #111;
+                text-stroke: 1.5px #111;
+            }
+            .contents {
                 margin: 10%;
-                padding-block: 10px;
-                margin-block: 10px;
-                color: #111;
-                animation: a .5s;
+                padding: 5%;
+                border: 1px solid #111;
+                border-left-width: 5px;
+                border-radius: 5px;
+                box-shadow: 3px 3px 3px #1115;
             }
             footer {
-                padding: 20px;
-                padding-inline: 10%;
+                position: fixed,absolute;
                 bottom: 0;
                 left: 0;
                 right: 0;
-                position: fixed,absolute;
-                background-color: #03e;
+                background-color: #111;
+                background: linear-gradient(to bottom, #333, #111);
+                padding: 7%;
                 color: #fff;
             }
-            @keyframes a {
-                0% {
-                    translate: 100%;
-                }
-                100% {
-                    translate: 0;
-                }
+            #ctu {
+                background-color: #111;
+                font-size: 1.2rem;
+                color: #fff;
+                font-family: futura, Arial, Sans-Serif;
+                padding: 7px;
+                border-radius: calc(infinity * 1px);
             }
-            @keyframes b {
-                0% {
-                    filter: blur(1px);
-                }
-                100% {
-                    filter: blur(0);
-                }
+            footer hr {
+                border: 1px solid #fff;
+                margin-block: 5px;
             }
         </style>
     </head>
     <body>
+        <header>
+            <h1 class="keto21">
+                keto21
+            </h1>
+            <img src="./keto.svg" title="keto" alt="keto" width="50px" height="50px">
+        </header>
         <main id="top">
-            <img src="./keto.svg" width="70px" height="70px" alt="keto" title="keto21!">
-            <h1 class="keto" style="margin-bottom: 10vh">keto21</h1>
-            <h2><span style="background-color: #08f; padding: 3px; border-radius: 5px;">About me</span></h2>
-            <h2><br></h2>
-            <p>My name is keto. I am 14 years old. My blood type is A. My hobbies are web design and programming. I don't have a good sense of design, but I work hard every day. I'm studying Svelte (JS Library). I want to be a game developer in the future.</p>
-            
-            <h2><span style="background-color: #08f; padding: 3px; border-radius: 5px;">Skill</span></h2>
-            <h2><br></h2>
-            <ul>
-                Language : ☆☆☆☆☆︎
-                <li>HTML : ★★☆☆☆</li>
-                <li>CSS : ★★☆☆☆︎</li>
-                <li>JavaScript : ★☆︎☆☆☆︎</li>
-                <li>Scratch : ★★★☆☆︎︎</li>
-            </ul>
-            <p>HTML, CSS, and JavaScript is used here. I wanted to develop with Svelte, but there are still things I need to learn. I plan to study Unity and Blender because I want to be a game developer in the future.</p>
-            
-            <h2><span style="background-color: #08f; padding: 3px; border-radius: 5px;">Link</span></h2>
-            <h2><br></h2>
-            <ul>
-                <li><a href="https://github.com/KETO-21">GitHub</a></li>
-                <li><a href="https://scratch.mit.edu/users/keto21/">Scratch</a></li>
-                <li><a href="#top"><strong>Top Page</strong></a></li>
-                <li><a href="https://chat.keto21.f5.si/">Chatroom</a></li>
-                <li><a href="https://www.roblox.com/users/5174944355/profile?friendshipSourceType=PlayerSearch">Request from Tawashi</a></li>
-                <li><a href="">Unknown</a></li>
-                <li><a href="https://line.me/ti/g2/bbl8kL7FDSJs9OUijPpjCkxEqpQaExi8RDwQpg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">Request</a></li>
-            </ul>
-            <button id="copyURL" onclick="a()">Copy the URL</button>
+            <h1 id="hdng">://keto21.f5.si</h1><br>
+            <p>Scratchをかじってる学生</p>
+            <div class="space"></div>
+            <h2>About me</h2>
+            <div class="contents">
+                <p>
+                    name : keto<br>
+                    age : 14<br>
+                    blood type : A<br>
+                    hobby : web design, Scratch<br>
+                    dream : game programmer
+                </p>
+            </div>
+            <div class="space"></div>
+            <h2>Skill</h2>
+            <div class="contents">
+                <p>Language : ☆☆☆☆☆︎<br>
+                HTML : ★★☆☆☆<br>
+                CSS : ★★☆☆☆︎<br>
+                JavaScript : ★☆︎☆☆☆︎<br>
+                Scratch : ★★★☆☆</p>︎︎<br>
+                <p>
+                    ここでは、HTML, CSS, JavaScriptが使われている。しかし、JSライブラリは全く使っていない。今、僕はSveltを勉強しているので、使えるようになったらSveltを使って開発したい。C#とBlenderとUnityの勉強もしていきたい。
+                </p>
+            </div>
+            <div class="space"></div>
+            <h2>URLs</h2>
+            <div class="contents">
+                <ul>
+                    <a href="https://github.com/KETO-21">GitHub</a><br>
+                    <a href="https://scratch.mit.edu/users/keto21/">Scratch</a><br>
+                    <a href="#top"><strong>Top Page</strong></a><br>
+                    <a href="https://chat.keto21.f5.si/">Chatroom</a><br>
+                    <a href="https://www.roblox.com/users/5174944355/profile?friendshipSourceType=PlayerSearch">Request from Tawashi</a><br>
+                    <a href="">Unknown</a><br>
+                    <a href="https://line.me/ti/g2/bbl8kL7FDSJs9OUijPpjCkxEqpQaExi8RDwQpg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">Request</a>
+                </ul>
+            </div>
+            <button id="ctu" onclick="a()">Copy the URL</button>
+            <div class="space"></div>
+            <img src="./keto.svg" width="100px" height="100px" alt="keto" title="keto">
         </main>
         <footer>
-            <h1 class="keto" style="font-family: futura, Sans-Serif;font-weight: 900;color: #0000;-webkit-text-stroke: #fff 1.2px;text-stroke: #fff 1.2px;">keto21</h1>
+            <h1 class="keto2">keto21</h1>
             <p>All Rights Reserved.</p>
             <hr>
-            <p>Hosted by <a href="https://render.com/">Render</a>.</p>
-            <hr>
-            <p>Copyright &copy; 2024 keto21</p>
-            <hr>
+            <p>Copyright &copy; 2024 keto</p>
         </footer>
         <script>function a(){navigator.clipboard.writeText(location.href)}</script>
         <script>"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("./sw.js")});</script>

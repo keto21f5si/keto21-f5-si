@@ -71,6 +71,7 @@
             border: 5px solid #39ff14;
             box-shadow: 0 0 20px #39ff14, 0 0 40px #00ff00;
             margin: 20px 0;
+            animation: zoomIn 1s;
         }
 
         .description {
@@ -108,6 +109,15 @@
 
         footer {
             margin-top: 20px;
+        }
+        
+        @keyframes zoomIn {
+            0% {
+                scale: 0;
+            }
+            100% {
+                scale: 1;
+            }
         }
 
     </style>
@@ -149,7 +159,7 @@
         <footer>
             <p class="neon-text">
                 All Rights Reserved.<br>
-                © 2024 keto. All rights reserved.
+                &copy; 2024 keto. All rights reserved.
             </p>
         </footer>
     </div>

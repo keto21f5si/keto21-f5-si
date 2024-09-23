@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>keto21 | Home</title>
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="Ar-U6JNbcoH49_c-X5R7LR2N69nug_r32dcZOyqYM_s">
@@ -22,154 +21,164 @@
     <style>
         * {
             scroll-behavior: smooth;
-        }
-
-        body {
-            overflow-x: hidden;
-            width: 100%;
-            margin: 0;
             padding: 0;
-            background-color: #111;
-            font-family: 'Arial', sans-serif;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 0;
+            font-family: arial, sans-serif;
+            width: 100%;
         }
-
+        html {
+            color: #111;
+            background-color: #ffe;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        header {
+            background-color: #222;
+            width: auto;
+            text-align: left;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            padding-inline: 10%;
+            padding-block: calc(100vh /70);
+            animation: slideIn 0.3s;
+        }
+        main {
+            width: auto;
+            padding-inline: 10%;
+            padding-block: calc(100vh / 10);
+        }
+        footer {
+            width: auto;
+            padding: calc(100vh / 65);
+            background-color: #222;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #aaa;
+        }
         h1 {
             font-size: 45px;
-            font-family: futura;
-            color: #fff;
         }
-
         h2 {
             font-size: 33px;
-            font-family: futura;
+            margin-block: 10px;
         }
-
-        .container {
-            text-align: center;
-            padding: 20px;
+        p {
+            font-size: 18px;
+            line-height: 1.5;
         }
-
-        .neon-text {
-            color: #39ff14;
-            text-shadow:
-            0 0 5px #39ff14,
-            0 0 10px #39ff14,
-            0 0 20px #39ff14,
-            0 0 40px #3f7,
-            0 0 100px #0f0,
-            0 0 150px #0f0;
+        a {
+            color: #111;
+            font-size: 18px;
         }
-
-        .icon {
+        small {
+            font-size: 15px;
+        }
+        ul {
+            margin-left: 10%;
+        }
+        li {
+            font-size: 18px;
+        }
+        #logo {
+            width: 120px;
+            height: 120px;
+            padding: 5px;
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 5px solid #39ff14;
-            box-shadow: 0 0 20px #39ff14, 0 0 40px #00ff00;
-            margin: 20px 0;
-            animation: zoomIn 1s;
+            background-color: #51f;
+            box-shadow: 0 0 10px #15f;
+            animation: zoomIn 0.3s;
         }
-
-        .description {
-            font-size: 18px;
-            line-height: 1.5;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .contents {
+        #content {
+            width: auto;
+            padding: 5%;
+            border-radius: 7px;
+            margin: 10%;
+            margin-block: 20px;
             text-align: left;
-            padding: 20px;
+            background-color: #eed;
+            box-shadow: 0 0 5px #1115;
         }
-
-        .urls {
-            font-size: 18px;
-            line-height: 1.5;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .urls a {
-            color: #fff;
-        }
-
-        #copyURL {
-            color: #fff;
-            font-family: futura;
-            background-color: #111;
-            border: solid 1px #fff;
+        button {
+            background-color: #fff;
+            padding: 5px;
+            color: #111;
+            width: 130px;
+            height: 40px;
+            border: 2px solid #51f;
+            box-shadow: 0 0 10px #61f;
             border-radius: calc(infinity * 1px);
             font-size: 18px;
-            box-shadow: 0 0 10px #39ff14, 0 0 20px #00ff00;
-            padding: 10px;
+            font-family: futura;
+            transition-duration: 0.3s;
         }
-
-        footer {
-            margin-top: 20px;
+        button:active {
+            border: none;
+            box-shadow: none;
         }
-        
+        hr {
+            border: 1px solid #333;
+        }
         @keyframes zoomIn {
             0% {
                 scale: 0;
+                opacity: 0;
             }
             100% {
                 scale: 1;
+                opacity: 1;
             }
         }
-
+        @keyframes slideIn {
+            0% {
+                translate: 0 -100%;
+            }
+            100% {
+                translate: 0;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="neon-text">://keto21.f5.si</h1>
-        </header>
-        <section class="profile">
-            <img src="keto.svg" alt="iconImage" class="icon">
-            <h2 class="neon-text">welcome to here!</h2>
-            <br>
-            <div class="contents">
-                <h2 class="neon-text">about me</h2>
-                <p class="description">
-                    name: keto<br>hobby: web design, Scratch<br>blood type: A<br>dream: programmer
-                </p>
-                <br>
-                <p class="description">
-                    Scratchでゲームを作ったり、HTML, CSSの勉強をしたりしています。今後はC#とBlenderとUnityの勉強もしようと思います。
-                </p>
-                <br>
-                <h2 class="neon-text">URLs</h2>
-                <p class="urls">
-                    <a href="https://github.com/KETO-21">GitHub</a><br>
-                    <a href="https://keto-21.github.io/ketoBlog/">My Blog</a><br>
-                    <a href="https://scratch.mit.edu/users/keto21/">Scratch</a><br>
-                    <a href="#top"><strong>Top Page</strong></a><br>
-                    <a href="https://chat.keto21.f5.si/">Chatroom</a><br>
-                    <a href="https://www.roblox.com/users/5174944355/profile?friendshipSourceType=PlayerSearch">Request from Tawashi</a><br>
-                    <a href="line://msg/text/https://keto21.f5.si/">LINEで共有</a><br>
-                    <a href="https://line.me/ti/g2/bbl8kL7FDSJs9OUijPpjCkxEqpQaExi8RDwQpg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">Request</a>
-                </p>
-                <br>
-            </div>
-            <button id="copyURL" onclick="a()">Copy the URL</button>
-        </section>
+    <header>
+        <h1>://keto21.f5.si/</h1>
+        <p>KETO’s portfolio site.</p>
+    </header>
+    <main>
+        <img src="./keto.svg" alt="icon" id="logo">
+        <h2>Welcome to Here.</h2>
         <br>
-        <footer>
-            <p class="neon-text">
-                &copy; 2024 keto. All rights reserved.
-            </p>
-        </footer>
-    </div>
+        <h2>about me</h2>
+        <div id="content">
+            <p>name: keto<br>hobby: web design, Scratch<br>blood type: A<br>dream: programmer</p><br><p>Scratchでゲームを作ったり、HTML, CSSの勉強をしたりしています。今後はC#とBlenderとUnityの勉強もしようと思います。</p>
+        </div>
+        <h2>URLs</h2>
+        <div id="content">
+            <ul>
+                <li><a href="https://github.com/KETO-21">GitHub</a></li>
+                <li><a href="https://keto-21.github.io/ketoBlog/">My Blog</a></li>
+                <li><a href="https://scratch.mit.edu/users/keto21/">Scratch</a></li>
+                <li><a href="#top"><strong>Top Page</strong></a></li>
+                <li><a href="https://chat.keto21.f5.si/">Chatroom</a></li>
+                <li><a href="https://www.roblox.com/users/5174944355/profile?friendshipSourceType=PlayerSearch">Request from Tawashi</a></li>
+                <li><a href="line://msg/text/https://keto21.f5.si/">LINEで共有</a></li>
+                <li><a href="https://line.me/ti/g2/bbl8kL7FDSJs9OUijPpjCkxEqpQaExi8RDwQpg?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">Request</a></li>
+            </ul>
+        </div>
+        <button type="button" onclick="cU()">Copy the URL</button>
+    </main>
+    <footer>
+        <small>
+            All rights reserved.<br>&copy; 2024 keto
+        </small>
+    </footer>
     <script>
-        function a() {
-            navigator.clipboard.writeText(location.href)}
+        function cU() {navigator.clipboard.writeText(location.href);}
     </script>
     <script>
-        "serviceWorker"in navigator && window.addEventListener("load", function() {
-            navigator.serviceWorker.register("./sw.js")});
+        "serviceWorker"in navigator && window.addEventListener("load", function() {navigator.serviceWorker.register("./sw.js")});
     </script>
 </body>
 </html>

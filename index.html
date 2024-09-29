@@ -2,8 +2,8 @@
 <html lang="ja">
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>keto21 | Home</title>
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="Ar-U6JNbcoH49_c-X5R7LR2N69nug_r32dcZOyqYM_s">
@@ -24,8 +24,8 @@
             scroll-behavior: smooth;
             padding: 0;
             margin: 0;
-            font-family: arial, sans-serif;
-            width: 100%;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
         }
         html {
             color: #111;
@@ -33,131 +33,144 @@
             overflow-x: hidden;
             text-align: center;
         }
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         header {
             background-color: #222;
-            width: auto;
-            text-align: left;
+            padding: 20px;
             top: 0;
             left: 0;
             right: 0;
             color: #fff;
-            padding-inline: 10%;
-            padding-block: calc(100vh /70);
-            animation: slideIn 0.3s;
+            text-align: left;
+        }
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 5px;
         }
         main {
-            width: auto;
-            padding-inline: 10%;
-            padding-block: calc(100vh / 10);
+            flex-grow: 1;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 16%;
         }
         footer {
-            width: auto;
-            padding: calc(100vh / 65);
             background-color: #222;
+            color: #fff;
+            padding: 20px;
+            bottom: 0;
             left: 0;
             right: 0;
-            bottom: 0;
-            color: #aaa;
-        }
-        h1 {
-            font-size: 45px;
+            text-align: center;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            font-size: 33px;
-            margin-block: 10px;
+            font-size: 30px;
+            margin: 20px 0;
         }
         p {
             font-size: 18px;
-            line-height: 1.5;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
         a {
-            color: #111;
+            color: #07e;
             font-size: 18px;
-            line-height: 1.7;
+            text-decoration: none;
+            transition: color 0.3s;
         }
-        small {
-            font-size: 15px;
+        a:hover {
+            color: #005bb5;
         }
         ul {
-            margin-left: 10%;
+            margin-left: 0;
+            padding-left: 0;
+            list-style: none;
         }
-        li {
+        ul li {
             font-size: 18px;
+            margin: 10px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: "::";
+            color: #07e;
+            font-size: 24px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            line-height: 18px;
         }
         #logo {
-            width: 120px;
-            height: 120px;
-            padding: 5px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            background-color: #51f;
-            box-shadow: 0 0 10px #15f;
-            animation: zoomIn 0.3s;
+            background-color: #111;
+            margin: 20px auto;
+            padding: 3px;
+            display: block;
         }
-        #content {
-            width: auto;
-            padding: 5%;
-            border-radius: 7px;
-            margin: 10%;
-            margin-block: 20px;
-            text-align: left;
+        .content {
             background-color: #eed;
-            box-shadow: 0 0 5px #1115;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+            box-shadow: 0 4px 12px #0002;
+            max-width: 700px;
+            text-align: left;
         }
         button {
-            background-color: #fff;
-            padding: 5px;
-            color: #111;
-            width: 130px;
-            height: 40px;
-            border: 2px solid #51f;
-            box-shadow: 0 0 10px #61f;
-            border-radius: calc(infinity * 1px);
-            font-size: 18px;
-            font-family: futura;
-            transition-duration: 0.3s;
-        }
-        button:active {
+            background-color: #555;
             border: none;
-            box-shadow: none;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #111;
         }
         hr {
-            border: 1px solid #333;
-        }
-        @keyframes zoomIn {
-            0% {
-                scale: 0;
-                opacity: 0;
-            }
-            100% {
-                scale: 1;
-                opacity: 1;
-            }
-        }
-        @keyframes slideIn {
-            0% {
-                translate: 0 -100%;
-            }
-            100% {
-                translate: 0;
-            }
+            border: 1px solid #ccb;
+            margin: 40px 0;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>://keto21.f5.si/</h1>
-        <p>KETO’s portfolio site.</p>
+        <p>
+            KETO’s portfolio site.
+        </p>
     </header>
     <main>
         <img src="./keto.svg" alt="icon" id="logo">
         <h2>Welcome to Here.</h2>
-        <br>
-        <h2>about me</h2>
-        <div id="content">
-            <p>name: keto<br>hobby: web design, Scratch<br>blood type: A<br>dream: programmer</p><br><p>Scratchでゲームを作ったり、HTML, CSSの勉強をしたりしています。今後はC#とBlenderとUnityの勉強もしようと思います。</p>
+        <div class="content">
+            <h2>about me</h2>
+            <p>
+                name: keto<br>hobby: web design, Scratch<br>blood type: A<br>dream: programmer
+            </p>
+            <br>
+            <p>
+                Scratchでゲームを作ったり、HTML, CSSの勉強をしたりしています。今後はC#とBlenderとUnityの勉強もしようと思います。
+            </p>
         </div>
-        <h2>URLs</h2>
-        <div id="content">
+        <hr>
+        <div class="content">
+            <h2>URLs</h2>
             <ul>
                 <li><a href="https://github.com/KETO-21">GitHub</a></li>
                 <li><a href="https://keto-21.github.io/ketoBlog/">My Blog</a></li>
@@ -177,10 +190,13 @@
         </small>
     </footer>
     <script>
-        function cU() {navigator.clipboard.writeText(location.href);}
+        function cU() {
+            navigator.clipboard.writeText(location.href);
+        }
     </script>
     <script>
-        "serviceWorker"in navigator && window.addEventListener("load", function() {navigator.serviceWorker.register("./sw.js")});
+        "serviceWorker"in navigator && window.addEventListener("load", function() {
+            navigator.serviceWorker.register("./sw.js")});
     </script>
 </body>
 </html>

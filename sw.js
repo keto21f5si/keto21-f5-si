@@ -1,5 +1,5 @@
-var CACHE_NAME = 'pwa-sample';
-var urlsToCache = ['../../index.html', '../js/main.js', '../css/main.css'];
+var CACHE_NAME = 'keto21_f5_si';
+var urlsToCache = ['/index.html'];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(

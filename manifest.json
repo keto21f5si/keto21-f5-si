@@ -2,7 +2,8 @@
   "name": "keto21",
   "short_name": "keto21",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "theme_color": "#333",
+  "background_color": "#0f5",
   "start_url": "./index.html",
   "icons": [
     {

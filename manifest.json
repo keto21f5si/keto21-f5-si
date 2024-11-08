@@ -1,9 +1,9 @@
 {
-  "name": "keto21",
-  "short_name": "keto21",
+  "name": "keto21f5si",
+  "short_name": "keto",
   "display": "standalone",
-  "theme_color": "#333",
-  "background_color": "#0f5",
+  "theme_color": "#0f5",
+  "background_color": "#333",
   "start_url": "./index.html",
   "icons": [
     {

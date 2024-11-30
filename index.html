@@ -3,7 +3,6 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="keto" />
     <title>keto’s profile site</title>
     <meta name="robots" content="index, follow" />
@@ -37,7 +36,7 @@
       html {
         -webkit-text-size-adjust: 100%;
         color: #111;
-        background-color: #ffe;
+        background: #f5f5f5;
         overflow-x: hidden;
         text-align: center;
       }
@@ -49,17 +48,17 @@
         flex-direction: column;
         justify-content: space-between;
       }
-      header {
-        background-color: #222;
-        padding: 10px;
-        top: 0;
-        left: 0;
-        right: 0;
+      header, footer {
+        background: #85f;
+        background: linear-gradient(45deg, #85f, #08f);
+        padding: 5px;
+        margin: 0;
         color: #fff;
         text-align: left;
+        text-align: center;
       }
       header h1 {
-        font-size: 45px;
+        font-size: 43px;
         margin-bottom: 5px;
       }
       main {
@@ -68,16 +67,7 @@
         max-width: 900px;
         margin: auto;
         padding: 30px 16%;
-      }
-      footer {
-        background-color: #222;
-        color: #fff;
-        padding: 20px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        text-align: center;
-        box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+        color: #225;
       }
       h2 {
         font-size: 30px;
@@ -89,13 +79,14 @@
         margin-bottom: 20px;
       }
       a {
-        color: #111;
-        background-color: #1f7;
+        color: #f50;
         font-size: 18px;
         transition: 0.3s;
       }
-      a:hover {
-        color: #15f;
+      a:active {
+        color: #111;
+        font-size: 20px;
+        background: #1f7;
       }
       ul {
         margin-left: 0;
@@ -118,37 +109,41 @@
         line-height: 18px;
       }
       #logo {
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
+        border: 4.3px solid #85f;
         border-radius: 50%;
-        background-color: #111;
         margin: 20px auto;
         padding: 3px;
         display: block;
+        box-shadow: 0 0 10px #08f;
       }
       .content {
-        background-color: #eed;
+        background: #f0f0f0;
         border-radius: 10px;
         padding: 10px;
         margin: 20px auto;
-        box-shadow: 0 4px 12px #0002;
-        max-width: 700px;
+        box-shadow: 0 0 12px #80f8;
+        max-width: 400px;
         text-align: left;
       }
       button {
-        background-color: #555;
+        background: #85f;
+        background: linear-gradient(45deg, #85f, #08f);
         border: none;
         padding: 10px 20px;
         color: #fff;
         font-size: 18px;
         border-radius: 5px;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: 0.3s;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         margin-top: 20px;
+        opacity: 1;
       }
-      button:hover {
-        background-color: #111;
+      button:active {
+        opacity: .8;
+        scale: 1.1;
       }
       hr {
         border: 1px solid #ccb;
@@ -235,9 +230,16 @@
     </footer>
     <script>
       const copy = document.querySelector("#copy");
+      const main = document.querySelector("main");
       copy.addEventListener("click", () => {
         navigator.clipboard.writeText("https://keto21.f5.si/");
         alert("Copied URL!");
+        const p = document.createElement("p");
+        p.innerText = "Copied!";
+        main.appendChild(p);
+        setTimeout(() => {
+            p.remove();
+        }, 1000);
       });
     </script>
     <script>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8" />
@@ -58,7 +58,9 @@
       }
       header h1 {
         font-size: 43px;
-        margin-bottom: 5px;
+        margin: 5px;
+        padding: 5px;
+        border-block: 1px solid #fff;
       }
       main {
         flex-grow: 1;
@@ -67,6 +69,7 @@
         margin: auto;
         padding: 30px 16%;
         color: #225;
+        animation: fade 1s;
       }
       h2 {
         font-size: 30px;
@@ -80,9 +83,8 @@
       a {
         color: #f50;
         font-size: 18px;
-        transition: 0.3s;
       }
-      a:active {
+      a:hover {
         color: #08f;
       }
       ul {
@@ -124,6 +126,9 @@
         max-width: 400px;
         text-align: left;
       }
+      button, a {
+        transition: .3s;
+      }
       button {
         background: #0000;
         border: 1px solid #111;
@@ -132,10 +137,9 @@
         font-size: 18px;
         border-radius: 5px;
         cursor: pointer;
-        transition: 0.3s;
         margin-top: 20px;
       }
-      button:active {
+      button:hover {
         background: #111;
         color: #fff;
       }
@@ -143,12 +147,21 @@
         border: 1px solid #ccb;
         margin: 40px 0;
       }
+      @keyframes fade {
+        0% {
+          opacity: 0;
+          translate: 0 30px;
+        }
+        100% {
+          opacity: 1;
+          translate: 0;
+        }
+      }
     </style>
   </head>
   <body id="top">
     <header>
       <h1>://keto21.f5.si/</h1>
-      <p>Here is KETO’s portfolio site!</p>
     </header>
     <main>
       <img src="./keto.svg" alt="logo" id="logo" />
@@ -226,6 +239,7 @@
     <script>
       const copy = document.querySelector("#copy");
       const main = document.querySelector("main");
+
       copy.addEventListener("click", () => {
         navigator.clipboard.writeText("https://keto21.f5.si/");
         const p = document.createElement("p");

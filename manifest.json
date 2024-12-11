@@ -2,14 +2,14 @@
   "name": "keto21f5si",
   "short_name": "keto",
   "display": "standalone",
-  "theme_color": "#225",
+  "theme_color": "#0f5",
   "background_color": "#333",
   "start_url": "./index.html",
   "icons": [
     {
-      "src": "./keto.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "./ATI.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ]
 }

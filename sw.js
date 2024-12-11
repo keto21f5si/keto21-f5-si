@@ -1,5 +1,8 @@
-var CACHE_NAME = 'keto21_f5_si';
-var urlsToCache = ['/index.html'];
+var CACHE_NAME = "keto21_f5_si";
+var urlsToCache = [
+  "./index.html",
+  "./keto.svg"
+];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
@@ -9,7 +12,7 @@ self.addEventListener('install', function (event) {
   );
 });
 
-self.addEventListener('fetch', function (event) {
+self.addEventListener("fetch", function (event) {
   event.respondWith(
     caches.match(event.request).then(function (response) {
       return response ? response : fetch(event.request);

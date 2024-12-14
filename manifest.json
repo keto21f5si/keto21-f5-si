@@ -9,8 +9,10 @@
   "background_color": "#225",
   "theme_color": "#333",
   "icons": [
-    "src": "/ATI.png",
-    "sizes": "180x180,
-    "type": "image/png"
+    {
+      "src": "/ATI.png",
+      "sizes": "180x180,
+      "type": "image/png"
+    }
   ]
 }

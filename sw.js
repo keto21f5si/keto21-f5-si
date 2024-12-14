@@ -15,7 +15,7 @@ self.addEventListener("install", function(event) {
 self.addEventListener("fetch", function(event) {
   event.respondWith(async function() {
     try {
-      if (event.request.url.startWith("http")) {
+      if (event.request.url.startsWith("http")) {
         let res = await fetch(event.request);
         let cache = await cache.open(CACHE_NAME);
         cache.put(event.request.url, res.clone());

@@ -1,4 +1,4 @@
-const CACHE_NAME "keto21f5si-cache-v1";
+const CACHE_NAME = "keto21f5si-cache-v1";
 const urlsToCache = [
   "./",
   "./index.html",

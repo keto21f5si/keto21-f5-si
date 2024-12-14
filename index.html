@@ -24,6 +24,7 @@
     <link rel="icon" sizes="any" type="image/svg+xml" href="./keto.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="./ATI.png" />
     <link rel="canonical" href="https://keto21.f5.si/" />
+    <link rel="manifest" href="./manifest.json" />
     <style>
       * {
         scroll-behavior: smooth;
@@ -216,6 +217,9 @@
         <div id="bar">
           <!--グラフで可視化-->
         </div>
+        <noscript>
+          <p>JavaScript must be enable.</p>
+        </noscript>
         <p>
           HTML / CSS / JavaScript
           のスキルを活かして、ここを作成しました。↓<br />
@@ -270,6 +274,7 @@
         &copy; 2024 keto
       </small>
     </footer>
+    <script src="./index.js"></script>
     <script>
       const copy = document.querySelector("#copy");
       const main = document.querySelector("main");

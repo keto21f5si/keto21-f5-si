@@ -190,7 +190,6 @@
         width: calc(var(--lv, 0) * 20%);
       }
     </style>
-    <script src="./index.js"></script>
   </head>
   <body id="top">
     <header>
@@ -318,6 +317,15 @@
         bar.appendChild(p);
         bar.appendChild(div);
       });
+    </script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js").then(function(registration) {
+          }, function(err) {
+          });
+        });
+      }
     </script>
   </body>
 </html>

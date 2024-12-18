@@ -2,6 +2,7 @@ const CACHE_NAME = "keto21f5si-cache-v1";
 const urlsToCache = [
   "./",
   "./index.html",
+  "./style.css",
   "./keto.svg"
 ];
 self.addEventListener("install", function(event) {
